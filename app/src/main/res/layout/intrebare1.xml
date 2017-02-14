@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Alege-l pe cel  care îţi reflectă cel mai bine atitudinea şi comportamentul."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rgroup"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:text="Am tendinţa să fiu destul de independent şi îmi place să mă afirm. Nu-mi place să stau deoparte- vreau să realizez lucruri mari şi să am impact asupra celor din jur. Am tendinţa sa muncesc din greu dar şi să mă distrez."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:onClick="rbclick"
+            android:id="@+id/radioButton2"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp" />
+
+        <RadioButton
+            android:text="Am tendinţa să fiu tăcut şi îmi place să fiu singur. Nu obişnuiesc să atrag atenţia asupra mea  şi  nu obişnuiesc în  general  să  mă afirm. Nu mă simt bine să preiau conducerea sau să fiu aşa competitiv ca ceilalţi."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:onClick="rbclick"
+            android:id="@+id/radioButton3"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp" />
+
+        <RadioButton
+            android:text="Am tendinţa să fiu foarte responsabil şi devotat. Mă simt groaznic dacă nu-mi ţin promisiunile şi dacă nu fac ceea ce ceilalţi aşteaptă de la mine."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:onClick="rbclick"
+            android:id="@+id/radioButton4"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp" />
+    </RadioGroup>
+
+    <Button
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_marginTop="15dp"
+        android:onClick="onNextClick" />
+
+</LinearLayout>

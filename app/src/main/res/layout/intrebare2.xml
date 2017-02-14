@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Alege-l pe cel  care îţi reflectă cel mai bine atitudinea şi comportamentul."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rgroup2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:text="Sunt o persoană care are de obicei o imagine pozitivă despre viaţă şi simte că lucrurile se  vor sfârşi cu bine. Nu mă simt întotdeauna grozav dar încerc să nu arăt asta nimănui! Amân de multe ori  să-mi rezolv problemele."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:onClick="rbclick2"
+            android:id="@+id/radioButton5"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp" />
+
+        <RadioButton
+            android:text=" Sunt o persoană cu sentimente puternice. Când sunt supărat aş vrea ca cei din jur să–mi răspundă şi să fie alături mine. Ştiu care sunt regulile şi nu-mi place ca oamenii să-mi spună ce să fac."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:onClick="rbclick2"
+            android:id="@+id/radioButton6"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp" />
+
+        <RadioButton
+            android:text="Tind să fiu logic şi mă stăpânesc bine. Sunt eficient – chiar perfecţionist – şi prefer să lucrez  singur. Când sunt probleme sau conflicte personale, încerc să nu mă implic emoţional în acea situaţie."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:onClick="rbclick2"
+            android:id="@+id/radioButton7"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp" />
+    </RadioGroup>
+
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_marginTop="15dp"
+        android:onClick="onSubmitClick" />
+
+</LinearLayout>
